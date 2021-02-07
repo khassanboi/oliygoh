@@ -5,10 +5,10 @@ $color-text: #738099;
 
 // BREAKPOINTS
 
-$bp-xl: 81.25em; // 1300px
-$bp-lg: 62.5em; // 1000px
-$bp-md: 50em; //  800px
-$bp-sm: 37.5em; //  600px
+$bp-xl: 90em; // 1440px
+$bp-lg: 64em; // 1024px
+$bp-md: 48em; //  768px
+$bp-sm: 22.5em; //  360px
 
 // NORMALIZING THE OVERALL LAYOUT BY IGNORING DEFAULT PROPERTIES
 
@@ -20,25 +20,36 @@ $bp-sm: 37.5em; //  600px
     box-sizing: inherit;
 }
 
+a {
+    text-decoration: none;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%; //10px
     overflow-x: hidden;
     font-family: "Inter", sans-serif;
 
-    @media only screen and (max-width: $bp-xl) {
-        font-size: 50%;
+    @media only screen and (max-width: $bp-md) {
+        font-size: 46.875%; // 7.5px
     }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header,
+.nav,
+.section,
+.footer {
+    padding: 1.5rem 9.2rem;
 
     @media only screen and (max-width: $bp-lg) {
-        font-size: 45%;
+        padding: 1.5rem 2rem;
     }
 
     @media only screen and (max-width: $bp-md) {
-        font-size: 40%;
-    }
-
-    @media only screen and (max-width: $bp-sm) {
-        font-size: 35%;
+        padding: 2rem 2rem;
     }
 }

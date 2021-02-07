@@ -30,11 +30,46 @@
             </div>
             <div class="header__menu">
                 <a href="#">
-                    <img src="./img/menu-bar.svg" alt="Menyu Tugmasi" />
+                    <img src="./img/menu-bar.svg" alt="Menyu Tugmasi" class="header__menu-open" />
+                    <img src="./img/menu-close.svg" alt="Menyuni Yopish Tugmasi" class="header__menu-close" />
                 </a>
             </div>
         </header>
 
-        <script type="module" src="./js/main.js"></script>
+        <nav class="nav">
+            <div class="nav__language">
+                <p class="p">Sayt Tilini Tanlang</p>
+                <a href="#uz" class="btn btn--ghost active">O'zbekcha</a>
+                <a href="#ru" class="btn btn--ghost">Ruscha</a>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a href="#">Yangiliklar</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#">Oliygohlar</a>
+                    <img src="./img/arrow-down-white.svg" alt="Pastga Qaratilgan O'q" />
+                </li>
+                <li class="nav__list-item">
+                    <a href="#">Grantlar</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#">Abiturient</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#">Testlar</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#">Talabalar</a>
+                </li>
+            </ul>
+            <div class="nav__search">
+                <input type="text" placeholder="Qidiruv ..." />
+                <img src="./img/magnifier.svg" alt="Qidiruv Tugmasi" />
+            </div>
+        </nav>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>

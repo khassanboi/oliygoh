@@ -4,3 +4,23 @@
     line-height: 1.7rem;
     color: $color-text;
 }
+
+.btn {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    border: 1px solid;
+
+    &--ghost {
+        border-color: #9b9fab;
+        color: #9b9fab;
+
+        &.active,
+        &:hover {
+            border-color: $color-primary;
+            color: $color-primary;
+        }
+    }
+}
