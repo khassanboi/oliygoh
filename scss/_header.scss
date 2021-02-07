@@ -1,5 +1,4 @@
 .header {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,7 +6,10 @@
     position: fixed;
     top: 0;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    &--shaded {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
 
     &__main {
         display: flex;
@@ -107,7 +109,6 @@
 }
 
 .nav {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -177,7 +178,9 @@
         position: absolute;
         top: -80%;
         left: 0;
-        transition: top 0.5s;
+        transition: top 0.5s, opacity 0.001s;
+        opacity: 0;
+        pointer-events: none;
         z-index: 50;
 
         &__list {

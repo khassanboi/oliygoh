@@ -41,8 +41,9 @@ body {
 .header,
 .nav,
 .pinned,
-.section,
+.stats,
 .footer {
+    width: 100%;
     padding: 1.5rem 9.2rem;
 
     @media only screen and (max-width: $bp-lg) {
