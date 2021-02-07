@@ -1,8 +1,6 @@
 // COLORS
 
 $color-primary: #2681ff;
-$color-text: #738099;
-
 // BREAKPOINTS
 
 $bp-xl: 90em; // 1440px
@@ -37,10 +35,12 @@ html {
 
 body {
     overflow-x: hidden;
+    padding-top: 7.6rem;
 }
 
 .header,
 .nav,
+.pinned,
 .section,
 .footer {
     padding: 1.5rem 9.2rem;
