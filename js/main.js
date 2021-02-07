@@ -26,4 +26,8 @@ $(document).ready(function () {
 
         toggleButtonAndShadow();
     });
+
+    $(".header__languages").click(() => {
+        $(".header__languages-container").toggle();
+    });
 });

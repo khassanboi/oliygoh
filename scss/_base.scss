@@ -1,6 +1,7 @@
 // COLORS
 
 $color-primary: #2681ff;
+$color-accent: #f4900c;
 // BREAKPOINTS
 
 $bp-xl: 90em; // 1440px
@@ -42,6 +43,7 @@ body {
 .nav,
 .pinned,
 .stats,
+.main,
 .footer {
     width: 100%;
     padding: 1.5rem 9.2rem;

@@ -1,11 +1,13 @@
 .btn {
     padding: 1.5rem;
     display: flex;
+    white-space: nowrap;
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
     border: 1px solid;
     transition: all 0.3s;
+    text-align: center;
 
     &--ghost {
         border-color: #9b9fab;
@@ -18,15 +20,27 @@
         }
     }
 
-    &--full {
+    &--full-ghost {
         border-color: $color-primary;
         background-color: $color-primary;
         color: #fff;
 
         &.active,
         &:hover {
-            background-color: #fff;
+            background-color: transparent;
             color: $color-primary;
+        }
+    }
+
+    &--ghost-full {
+        border-color: $color-primary;
+        background-color: transparent;
+        color: $color-primary;
+
+        &.active,
+        &:hover {
+            background-color: $color-primary;
+            color: #fff;
         }
     }
 }
@@ -48,6 +62,7 @@
     line-height: 3rem;
     grid-column: 1 / -1;
     position: relative;
+    margin-bottom: 1rem;
 
     &--heading {
         padding-left: 2rem;
@@ -60,7 +75,7 @@
             transform: translateY(-50%);
             width: 0.6rem;
             height: 0.6rem;
-            background: #f4900c;
+            background: $color-accent;
             border-radius: 50%;
         }
     }
