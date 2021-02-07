@@ -39,12 +39,13 @@ body {
     padding-top: 7.6rem;
 }
 
-.header,
-.nav,
-.pinned,
-.stats,
-.main,
-.footer {
+header,
+nav,
+section.pinned,
+section.scholarships,
+summary,
+main,
+footer {
     width: 100%;
     padding: 1.5rem 9.2rem;
 
