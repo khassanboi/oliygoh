@@ -154,6 +154,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 5rem;
+    grid-gap: 3rem;
 
     &__left {
         .news-item {
@@ -236,6 +237,12 @@
             }
 
             @media only screen and (max-width: $bp-md) {
+                .p {
+                    width: 100%;
+                }
+            }
+
+            @media only screen and (max-width: $bp-sm) {
                 align-items: center;
 
                 .h1 {
@@ -243,8 +250,88 @@
                 }
 
                 .p {
-                    width: 100%;
                     text-align: center;
+                }
+            }
+        }
+    }
+
+    &__right {
+        &-container {
+            border-top: 1px solid #edeff2;
+            border-bottom: 1px solid #edeff2;
+            padding-top: 2rem;
+            padding-bottom: 5.5rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 3rem;
+            margin-bottom: 5rem;
+
+            .yangilik {
+                &__head {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    span {
+                        background-color: $color-primary;
+                        color: #fff;
+                        padding: 1rem 2rem;
+                        font-size: 1.4rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0.25rem;
+                    }
+                }
+
+                &__main {
+                    .p {
+                        font-size: 1.6rem;
+                    }
+
+                    .p.date {
+                        color: #9b9fab;
+                        font-size: 1.4rem;
+                        margin: 1.5rem 0;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: $bp-lg) {
+                grid-template-columns: 1fr;
+
+                .yangilik:nth-child(5) ~ .yangilik {
+                    display: none;
+                }
+            }
+
+            @media only screen and (max-width: $bp-md) {
+                grid-template-columns: repeat(2, 1fr);
+
+                .yangilik:nth-child(6) {
+                    display: inline-block !important;
+                }
+            }
+
+            @media only screen and (max-width: $bp-sm) {
+                grid-template-columns: 1fr;
+
+                .yangilik:nth-child(6) {
+                    display: none !important;
+                }
+            }
+
+            .btn {
+                grid-column: 1 / -1;
+                margin-top: 2rem;
+
+                @media only screen and (min-width: $bp-sm) {
+                    justify-self: center;
                 }
             }
         }
